@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MASSIL — Vinagre de Manzana Artesanal. Tradición artesanal en cada gota. Vinagre natural, premium y de calidad.">
+  <title>MASSIL — Vinagres de Manzana Artesanales</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="cart.css">
+  
+
+</head>
+<body>
+
+<!-- Canvas Partículas -->
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#inicio" class="navbar-brand" aria-label="Ir al inicio">
+    <span class="navbar-brand-name">MASSIL</span>
+    <span class="navbar-brand-sub">Vinagre Artesanal</span>
+  </a>
+  <ul class="navbar-nav" role="list">
+    <li><a href="#historia" class="nav-link">Historia</a></li>
+    <li><a href="#vinagre" class="nav-link">Nuestro Vinagre</a></li>
+    <li><a href="#proceso" class="nav-link">Proceso</a></li>
+    <li><a href="#productos" class="nav-link">Productos</a></li>
+    <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+  <a href="#inicio">Inicio</a>
+  <a href="#historia">Historia</a>
+  <a href="#vinagre">Nuestro Vinagre</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#productos">Productos</a>
+  <a href="#catalogo">Catálogo</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- ================================================
+     HERO
+     ================================================ -->
+<section class="hero" id="inicio" aria-label="Sección principal">
+  <!-- Fondo con capas -->
+  <div class="hero-bg">
+    <div class="hero-gradient" data-parallax="0.08"></div>
+    <div class="hero-dots"></div>
+  </div>
+
+  <!-- Elementos decorativos flotantes -->
+  <span class="hero-deco d-apple1" aria-hidden="true">🍎</span>
+  <span class="hero-deco d-apple2" aria-hidden="true">🍏</span>
+  <span class="hero-deco d-leaf1"  aria-hidden="true">🌿</span>
+  <span class="hero-deco d-leaf2"  aria-hidden="true">🍃</span>
+  <span class="hero-deco d-drop"   aria-hidden="true">💧</span>
+
+  <div class="hero-inner">
+    <!-- Contenido de texto -->
+    <div class="hero-content">
+      <span class="hero-badge" data-text="✦ Artesanal · Natural · Premium ✦">✦ Artesanal · Natural · Premium ✦</span>
+      <h1 class="hero-title">MASSIL</h1>
+      <p class="hero-sub">Vinagre de Manzana Artesanal</p>
+      <p class="hero-tagline">"Tradición artesanal en cada gota."</p>
+      <div class="hero-btns">
+        <a href="#productos" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Descubrir Productos
+        </a>
+        <a href="#historia" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Conocer MASSIL
+        </a>
+      </div>
+    </div>
+
+   
+<div class="hero-visual">
+      <img src="imagenes/logo1.png" alt="Vinagre de manzana MASSIL" class="bottle-img">
+    </div>
+
+    
+
+  <!-- Scroll indicator -->
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ================================================
+     HISTORIA
+     ================================================ -->
+<section class="section section-historia" id="historia">
+  <div class="container">
+    <div class="historia-grid">
+
+      <!-- Texto -->
+      <div class="historia-text reveal-left">
+        <span class="section-label" style="color:var(--marron-claro)">Nuestra Historia</span>
+        <h2>Una pasión que nació<br>en el campo.</h2>
+        <div class="divider left"></div>
+        <p>MASSIL nació de una tradición familiar transmitida por generaciones. Desde los huertos más selectos del estado, elegimos cada manzana con cuidado para producir un vinagre que respeta los tiempos naturales de fermentación.</p>
+        <p>Cada botella de MASSIL es el resultado de semanas de trabajo artesanal: selección, prensado, fermentación lenta y maduración cuidadosa. Sin atajos. Sin aditivos. Solo manzana y tiempo.</p>
+        <div class="historia-stats">
+          <div class="stat">
+            <div class="stat-num" data-count="15">0</div>
+            <div class="stat-label">Años de<br>experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="100">0</div>
+            <div class="stat-label">% Natural</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="5000">0</div>
+            <div class="stat-label">Familias<br>satisfechas</div>
+          </div>
+        </div>
+        <br>
+        <a href="#proceso" class="btn btn-dark" style="margin-top:1rem">Conocer nuestro proceso</a>
+      </div>
+
+      <!-- Visual -->
+      <div class="historia-visual reveal-right">
+        <div class="hv-badge">
+          ⭐ Artesanal<br>desde 2009
+        </div>
+        <div class="hv-main" data-parallax="0.06">
+          <img src="imagenes/or06.jpeg" data-parallax="0.60">
+        </div>
+        <div class="hv-accent">
+          <img src="imagenes/or04.jpeg" data-parallax="0.50">
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     NUESTRO VINAGRE
+     ================================================ -->
+<section class="section section-vinagre" id="vinagre">
+  <div class="vinagre-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="vinagre-grid">
+
+      <!-- Visual: Botella grande -->
+      <div class="vinagre-visual reveal-scale">
+        <div class="vv-glow"></div>
+        <!-- Elementos flotantes alrededor -->
+        <span class="vv-deco" aria-hidden="true"></span>
+        <span class="vv-deco" aria-hidden="true">🍎</span>
+        <span class="vv-deco" aria-hidden="true">🌿</span>
+        <span class="vv-deco" aria-hidden="true">🍃</span>
+        <span class="vv-deco" aria-hidden="true">💧</span>
+        <!-- Botella artesanal SVG (versión compacta) -->
+          <img src="imagenes/or02.jpeg">
+         <div> </div>
+          
+        
+      </div>
+
+      <!-- Contenido -->
+      <div class="vinagre-content reveal-left">
+        <span class="section-label light">Nuestro Vinagre</span>
+        <h2 style="color:var(--crema)">Más que un vinagre.<br>Una experiencia natural.</h2>
+        <div class="divider" style="background:linear-gradient(90deg,var(--verde-claro),var(--verde-menta))"></div>
+        <p>El vinagre MASSIL se produce mediante fermentación lenta y natural de manzanas frescas seleccionadas. Conservamos la madre del vinagre, rica en enzimas y probióticos, para ofrecerte un producto vivo y auténtico.</p>
+
+        <div class="vinagre-pills">
+          <div class="pill reveal delay-1">
+            <div class="pill-icon">🤲</div>
+            <div class="pill-text">
+              <strong>Artesanal</strong>
+              <span>Proceso 100% manual</span>
+            </div>
+          </div>
+          <div class="pill reveal delay-2">
+            <div class="pill-icon">🌿</div>
+            <div class="pill-text">
+              <strong>Natural</strong>
+              <span>Sin conservadores</span>
+            </div>
+          </div>
+          <div class="pill reveal delay-3">
+            <div class="pill-icon">⭐</div>
+            <div class="pill-text">
+              <strong>Calidad</strong>
+              <span>Manzanas selectas</span>
+            </div>
+          </div>
+          <div class="pill reveal delay-4">
+            <div class="pill-icon">🏺</div>
+            <div class="pill-text">
+              <strong>Tradición</strong>
+              <span>Receta generacional</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#productos" class="btn btn-primary">Ver todos los productos</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     PROCESO ARTESANAL
+     ================================================ -->
+<section class="section section-proceso" id="proceso">
+  <div class="container">
+    <div class="proceso-header reveal">
+      <span class="section-label">Proceso Artesanal</span>
+      <h2>De la manzana a tu mesa</h2>
+      <div class="divider"></div>
+      <p style="max-width:560px;margin:0 auto;opacity:.7">Cada botella de MASSIL recorre un proceso artesanal meticuloso. Sin prisa, sin atajos. Solo la paciencia de quien ama lo que hace.</p>
+    </div>
+
+    <div class="proceso-wrap">
+      <div class="proceso-timeline">
+
+        <div class="paso reveal delay-1">
+          <div class="paso-icon">
+            <span class="paso-num"></span>
+            🍎
+          </div>
+          <div class="paso-name">Selección</div>
+          <div class="paso-desc">Elegimos solo las mejores manzanas de temporada</div>
+        </div>
+
+        <div class="paso reveal delay-2">
+          <div class="paso-icon">
+            <span class="paso-num"></span>
+            🔪
+          </div>
+          <div class="paso-name">Prensado</div>
+          <div class="paso-desc">Extracción del jugo fresco de manzana</div>
+        </div>
+
+        <div class="paso reveal delay-3">
+          <div class="paso-icon">
+            <span class="paso-num"></span>
+            🍶
+          </div>
+          <div class="paso-name">Fermentación</div>
+          <div class="paso-desc">Fermentación alcohólica lenta y natural</div>
+        </div>
+
+        <div class="paso reveal delay-4">
+          <div class="paso-icon">
+            <span class="paso-num"></span>
+            ⏳
+          </div>
+          <div class="paso-name">Maduración</div>
+          <div class="paso-desc">Segunda fermentación acética controlada</div>
+        </div>
+
+        <div class="paso reveal delay-5">
+          <div class="paso-icon">
+            <span class="paso-num"></span>
+            ✨
+          </div>
+          <div class="paso-name">MASSIL</div>
+          <div class="paso-desc">Envasado artesanal listo para ti</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Banner inferior proceso -->
+    <div class="reveal" style="margin-top:4rem;background:linear-gradient(135deg,var(--verde-oscuro),var(--verde-natural));border-radius:20px;padding:2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem">
+      <div>
+        <p style="color:var(--verde-menta);font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.4rem">Sin conservadores · Sin colorantes · Sin aditivos</p>
+        <h3 style="color:var(--crema);font-family:var(--font-h)">Solo manzana, agua y tiempo.</h3>
+      </div>
+      <a href="#contacto" class="btn btn-secondary">Hacer un pedido</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     PRODUCTOS
+     ================================================ -->
+<section class="section section-productos" id="productos">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="section-label">Nuestros Productos</span>
+      <h2>Encuentra tu MASSIL ideal</h2>
+      <div class="divider"></div>
+      <p style="max-width:520px;margin:0 auto;opacity:.7">Cada presentación está diseñada para acompañarte en diferentes momentos de tu vida diaria.</p>
+    </div>
+
+    <div class="productos-grid">
+
+      <!-- Producto 1 -->
+      <div class="card reveal delay-1">
+        <div class="card-img">
+          <div class="card-img-bg"></div>
+          <span class="card-badge">Más vendido</span>
+          <img src="imagenes/or03.jpeg" data-parallax="0.75">
+          <div class="card-glow"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-name">VINAGRE DE COCINA </div>
+          <div class="card-pres">500 mL</div>
+          <div class="card-desc">VINGRE DE COCINA . Fermentación natural, madre del vinagre incluida, ideal para cocina y salud.</div>
+          <div class="card-footer">
+            <div class="card-price">20 bs.<small></small></div>
+
+          </div>
+        </div>
+        <div class="card-overlay">
+          <p class="card-overlay-text">Vinagre de manzana puro, sin filtrar. Conserva la madre del vinagre con todos sus beneficios naturales. Acidez 5%. Ideal para aderezos, marinados y uso terapéutico.</p>
+          <button
+    data-add-cart
+    data-nombre="Vinagre de cocina "
+    data-precio="20">
+    Agregar al carrito
+</button>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="card reveal delay-2">
+        <div class="card-img">
+          <div class="card-img-bg"></div>
+          <img src="imagenes/or07.jpeg" data-parallax="0.75">
+          <div class="card-glow"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-name">VINAGRE DE ,MANZANA ROJA </div>
+          <div class="card-pres">500 mL</div>
+          <div class="card-desc">La combinación perfecta: Una alternativa refrescante con un delicado toque cítrico.</div>
+          <div class="card-footer">
+            <div class="card-price">60 bs.<small>MXN</small></div>
+          </div>
+        </div>
+        <div class="card-overlay">
+          <p class="card-overlay-text">Mezcla equilibrada de vinagre de manzana artesanal y miel de abeja pura. Ideal para tomar en ayunas con agua tibia. Potencia los beneficios naturales de ambos ingredientes.</p>
+          <button
+    data-add-cart
+    data-nombre="Vinagre de Manzana roja "
+    data-precio="60">
+    Agregar al carrito
+</button>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="card reveal delay-3">
+        <div class="card-img">
+          <div class="card-img-bg"></div>
+          <span class="card-badge" style="background:var(--oro);color:var(--verde-oscuro)">Premium</span>
+          <img src="imagenes/or01.jpeg" data-parallax="0.75">
+          <div class="card-glow"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-name">VINAGRE DE MANZANA VERDE </div>
+          <div class="card-pres">750 mL</div>
+          <div class="card-desc">Una propuesta especial con un toque picante para sabores diferentes.</div>
+          <div class="card-footer">
+            <div class="card-price">60<small></small></div>
+
+          </div>
+        </div>
+        <div class="card-overlay">
+          <p class="card-overlay-text">Vinagre de manzana con maduración extendida de 18 meses en recipientes de barro. Sabor complejo y robusto. Acidez 6%. La elección de los conocedores.</p>
+          <button
+    data-add-cart
+    data-nombre="Vinagre de Manzana verde "
+    data-precio="60">
+    Agregar al carrito
+</button>
+        </div>
+      </div>
+
+    </div><!-- .productos-grid -->
+  </div>
+</section>
+
+<!-- ================================================
+     CATÁLOGO
+     ================================================ -->
+<section class="section section-catalogo" id="catalogo">
+  <div class="catalogo-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cat-header reveal">
+      <span class="section-label light">Catálogo Completo</span>
+      <h2 style="color:var(--crema)">Toda la familia MASSIL</h2>
+      <div class="divider" style="background:linear-gradient(90deg,var(--verde-claro),var(--verde-menta))"></div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filters reveal">
+      <button class="filter active" data-cat="all">Todos</button>
+      <button class="filter" data-cat="natural">clasico</button>
+      <button class="filter" data-cat="premium">especial</button>
+      <button class="filter" data-cat="especial">Citrico</button>
+    </div>
+
+    <!-- Grid Catálogo -->
+    <div class="catalogo-grid">
+
+      <!-- Producto 1: Vinagre de Cocina -->
+      <div class="cat-item reveal delay-1" data-cat="natural">
+        <div class="cat-img">
+          <img src="assets/img/vinagre-cocina.png" alt="Vinagre de Cocina" />
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">VINAGRE DE COCINA</div>
+          <div class="cat-size">500mL</div>
+          <div class="cat-price">20 BS.</div>
+        </div>
+      </div>
+
+      <!-- Producto 2: Vinagre de Manzana Roja -->
+      <div class="cat-item reveal delay-5" data-cat="especial">
+        <div class="cat-img">
+          <img src="assets/img/vinagre-manzana-roja.png" alt="Vinagre de Manzana Roja" />
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">VINAGRE DE MANZANA ROJA</div>
+          <div class="cat-size">1000 mL</div>
+          <div class="cat-price">60 BS.</div>
+        </div>
+      </div>
+
+      <!-- Producto 3: Vinagre de Manzana Verde -->
+      <div class="cat-item reveal delay-7" data-cat="premium">
+        <div class="cat-img">
+          <img src="assets/img/vinagre-manzana-verde.png" alt="Vinagre de Manzana Verde" />
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">VINAGRE DE MANZANA VERDE</div>
+          <div class="cat-size">1000 mL</div>
+          <div class="cat-price">60 BS.</div>
+        </div>
+      </div>
+
+    </div><!-- .catalogo-grid -->
+  </div>
+</section>
+
+<!-- ================================================
+     CONTACTO
+     ================================================ -->
+<section class="section section-contacto" id="contacto">
+  <div class="container">
+    <div class="contacto-grid">
+
+      <!-- Info + Redes -->
+      <div class="contacto-info reveal-left">
+        <span class="section-label" style="color:var(--marron-claro)">Contáctanos</span>
+        <h2>Hablemos sobre<br>tu pedido.</h2>
+        <div class="divider left"></div>
+        <p>¿Tienes preguntas sobre nuestros productos, quieres hacer un pedido especial o necesitas más información? Estamos aquí para ayudarte. Escríbenos y te respondemos a la brevedad.</p>
+
+        <!-- Redes sociales -->
+        <div class="socials">
+          
+          <a
+  href="https://wa.me/59169655369?text=Hola%2C%20gracias%20por%20contactarte%20con%20MASSIL.%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%3F"
+  class="soc-link wa"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp MASSIL"
+>
+  <div class="soc-icon">
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.198.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </div>
+
+  <div class="soc-text">
+    <strong>WhatsApp</strong>
+    <span>Respuesta rápida · Pedidos y consultas</span>
+  </div>
+</a>
+
+          <a href="https://www.instagram.com/massil_vinagres.artesanales?igsi=NWN2YWVkcDluZmxl&utm_source=qr" class="soc-link ig" target="_blank" rel="noopener" aria-label="Instagram MASSIL">
+            <div class="soc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div class="soc-text">
+              <strong>Instagram</strong>
+              
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/share/19PMCH8v63/?mibextid=wwXIfr" class="soc-link fb" target="_blank" rel="noopener" aria-label="Facebook MASSIL">
+            <div class="soc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <div class="soc-text">
+              <strong>Facebook</strong>
+         
+            </div>
+          </a>
+        </div>
+
+        <!-- Info adicional -->
+        <div style="background:var(--crema-oscura);border-radius:14px;padding:1.2rem 1.4rem;border-left:4px solid var(--verde-claro)">
+          <p style="font-size:.85rem;opacity:.75;margin:0">
+            📍 Producción local · 🚚 Envíos a todo el país · ⏰ Lunes a Viernes 9am–6pm
+          </p>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="reveal-right">
+        <div class="contact-form">
+          <div class="cf-title">Envíanos un mensaje</div>
+          <div class="cf-sub">Responderemos en menos de 24 horas.</div>
+
+          <form id="contact-form" novalidate>
+            <div class="fi-row">
+              <div class="fg">
+                <label class="fl" for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="fi" placeholder="Tu nombre" required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="fi" placeholder="Tu teléfono">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" class="fi" placeholder="tu@correo.com" required>
+            </div>
+            <div class="fg">
+              <label class="fl" for="interes">¿Qué te interesa?</label>
+              <select id="interes" name="interes" class="fi">
+                <option value="">Selecciona una opción</option>
+                <option value="pedido">Hacer un pedido</option>
+                <option value="mayoreo">Venta al mayoreo</option>
+                <option value="info">Más información</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="fi fi-textarea" placeholder="Cuéntanos qué necesitas..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="fs">Enviar mensaje 🍎</button>
+          </form>
+          <div id="form-success" class="fs-success"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="fruits" aria-hidden="true">🍎 🌿 🍏 🌱 🍃 🍎 🌿 🍏 🌱 🍃</div>
+
+    <div class="footer-top">
+      <!-- Marca -->
+      <div>
+        <div class="ft-brand-name">MASSIL</div>
+        <div class="ft-brand-sub">Vinagres de Manzana Artesanales</div>
+        <p class="ft-brand-desc">Tradición artesanal en cada gota. Producimos vinagre de manzana natural con las mejores manzanas seleccionadas.</p>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <div class="ft-col-title">Navegación</div>
+        <div class="ft-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#historia">Nuestra Historia</a>
+          <a href="#vinagre">Nuestro Vinagre</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#productos">Productos</a>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div>
+        <div class="ft-col-title">Productos</div>
+        <div class="ft-links">
+          <a href="#catalogo">Vinagre Natural</a>
+          <a href="#catalogo">Edición Premium</a>
+          <a href="#catalogo">Con Miel</a>
+          <a href="#catalogo">Con Jengibre</a>
+          <a href="#catalogo">Packs y Regalos</a>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <div class="ft-col-title">Contacto</div>
+        <div class="ft-links">
+          <a href="#contacto">Escríbenos</a>
+          <a href="https://wa.me/521XXXXXXXXXX" target="_blank">WhatsApp</a>
+          <a href="https://instagram.com/massil_vinagre" target="_blank">Instagram</a>
+          <a href="https://facebook.com/massil.vinagre" target="_blank">Facebook</a>
+          <a href="#contacto">Pedidos</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 <strong>MASSIL</strong> · Vinagres de Manzana Artesanales · Todos los derechos reservados.</span>
+      <span>Hecho con 🍎 y amor artesanal</span>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Botón flotante del carrito -->
+<button class="cart-toggle" aria-label="Carrito">
+  🛒 <span class="cart-count">0</span>
+</button>
+
+<!-- Panel lateral -->
+<div class="cart-overlay"></div>
+<aside class="cart-panel">
+  <div class="cart-header">
+    <h3>Tu carrito</h3>
+    <button class="cart-close">✕</button>
+  </div>
+  <div class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <strong class="cart-total-price">0 Bs.</strong>
+    </div>
+    <button class="cart-checkout">
+    Finalizar pedido por WhatsApp
+</button>
+  </div>
+</aside>
+
+
+<!-- Scripts -->
+<script src="particles.js"></script>
+<script src="hero.js"></script>
+<script src="main.js"></script>
+<script src="cart.js"></script>
+
+
+
+
+
+</body>
+</html>

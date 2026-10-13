@@ -1,0 +1,106 @@
+﻿/* ============================================
+   MASSIL — responsive.css
+   Mobile-first media queries
+   ============================================ */
+
+/* ---- TABLET: <= 1024px ---- */
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+  .hero-visual{display:none}
+  .hero-btns{justify-content:center}
+  .historia-grid{grid-template-columns:1fr;gap:3rem}
+  .historia-visual{height:320px;margin:0 auto;max-width:480px}
+  .vinagre-grid{grid-template-columns:1fr;gap:3rem}
+  .vinagre-visual{height:360px;order:-1}
+  .productos-grid{grid-template-columns:repeat(2,1fr)}
+  .catalogo-grid{grid-template-columns:repeat(2,1fr)}
+  .contacto-grid{grid-template-columns:1fr;gap:3rem}
+  .footer-top{grid-template-columns:1fr 1fr;gap:2.5rem}
+}
+
+/* ---- MOBILE: <= 768px ---- */
+@media (max-width:768px){
+  :root{--section-pad:4.5rem 1.4rem}
+
+  /* Navbar */
+  .navbar{padding:1rem 1.4rem}
+  .navbar.scrolled{padding:.7rem 1.4rem}
+  .navbar-nav{display:none}
+  .hamburger{display:flex}
+
+  /* Hero */
+  .hero-inner{padding:0 1.4rem;grid-template-columns:1fr}
+  .hero-content{padding:5rem 0 3rem;text-align:center}
+  .hero-btns{justify-content:center;flex-direction:column;align-items:center}
+  .hero-btns .btn{width:100%;max-width:300px;justify-content:center}
+  .hero-visual{display:none}
+  .hero-deco{display:none}
+  .d-apple1,.d-apple2,.d-leaf1,.d-leaf2,.d-drop{display:none}
+
+  /* Historia */
+  .historia-grid{grid-template-columns:1fr;gap:2.5rem}
+  .historia-visual{height:280px;max-width:360px;margin:0 auto}
+  .historia-stats{justify-content:center;gap:2.5rem}
+  .hv-badge{font-size:.72rem;padding:.7rem 1rem}
+
+  /* Vinagre */
+  .vinagre-grid{grid-template-columns:1fr;gap:2rem}
+  .vinagre-visual{height:280px;order:-1}
+  .vinagre-pills{grid-template-columns:1fr 1fr}
+
+  /* Proceso */
+  .proceso-timeline{flex-direction:column;align-items:center;gap:2.5rem;min-width:0}
+  .paso{width:100%;max-width:280px;flex-direction:row;text-align:left;gap:1.2rem}
+  .paso::before{display:none}
+  .paso::after{content:'';position:absolute;left:34px;top:70px;width:3px;height:2.5rem;background:linear-gradient(to bottom,var(--verde-natural),var(--verde-claro))}
+  .paso:last-child::after{display:none}
+  .paso-icon{flex-shrink:0;margin-bottom:0}
+  .paso-desc{max-width:none}
+
+  /* Productos */
+  .productos-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+
+  /* Catalogo */
+  .catalogo-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+
+  /* Contacto */
+  .contacto-grid{grid-template-columns:1fr;gap:2rem}
+  .contact-form{padding:1.8rem}
+
+  /* Footer */
+  .footer-top{grid-template-columns:1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;gap:.6rem;text-align:center}
+  .ft-brand-desc{max-width:100%}
+}
+
+/* ---- SMALL MOBILE: <= 480px ---- */
+@media (max-width:480px){
+  h1{font-size:clamp(3rem,14vw,4.5rem)}
+  h2{font-size:clamp(1.7rem,8vw,2.4rem)}
+
+  .btn{padding:.8rem 1.5rem;font-size:.82rem}
+  .catalogo-grid{grid-template-columns:1fr}
+  .vinagre-pills{grid-template-columns:1fr}
+  .fi-row{grid-template-columns:1fr}
+  .historia-stats{flex-direction:column;align-items:center;gap:1.5rem}
+
+  .paso{flex-direction:column;align-items:center;text-align:center}
+  .paso::after{display:none}
+
+  .hv-main{font-size:4rem}
+  .hv-accent{font-size:2.5rem}
+
+  .card-overlay{display:none}
+  .navbar-brand-name{font-size:1.4rem}
+
+  /* Filtros en columna */
+  .filters{flex-direction:row;justify-content:center}
+  .filter{font-size:.74rem;padding:.45rem 1rem}
+}
+
+/* ---- LANDSCAPE MOBILE ---- */
+@media (max-width:768px) and (orientation:landscape){
+  .hero{min-height:100svh}
+  .hero-content{padding:4rem 0 2rem}
+  .hero-title{font-size:clamp(3rem,10vw,5rem)}
+}

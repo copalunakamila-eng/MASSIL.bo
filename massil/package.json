@@ -1,0 +1,11 @@
+{
+  "name": "massil",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
